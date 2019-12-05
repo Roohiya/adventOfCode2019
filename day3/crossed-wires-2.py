@@ -1,5 +1,7 @@
 import copy
 import sys
+import time
+start = time.time()
 
 f = open('input.txt', 'r')
 
@@ -125,4 +127,5 @@ def crossedWires():
   return minTotalSteps
 
 result = crossedWires()
+print('It took', time.time()-start, 'seconds.')
 print(result)
